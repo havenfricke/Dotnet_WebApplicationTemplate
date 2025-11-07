@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Fricke_ITM_325_Assignment_4.MasterPages.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/Reset.css?v=1.0.0"/>
+    <link rel="stylesheet" href="/Styles/Main.css?v=1.0.0" /> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div id="WebPage">
+
+        <header id="Banner">
+
+            <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
+            <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
+           
+            <h1>Haven Fricke</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="/ContentPages/Home.aspx">Home</a></li>
+                    <li><a href="/ContentPages/Resume.aspx">R&eacute;sum&eacute;</a></li>
+                    <li><a href="/ContentPages/Calculator.aspx">Calculator</a></li>
+                    <li><a href="/ContentPages/OrderForm.aspx">Order Menu</a></li>
+                    <li><a href="#">Theme</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div id="Wrapper">
+            <aside id="Links">
+                <h2>Side Links</h2>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                </ul>
+            </aside>
+            <section id="PageContent">
+               
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                
+            </section>
+        </div>
+
+        <footer id="Footer">
+            <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
+            <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
+            <p>&copy; 2025 Haven Fricke. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

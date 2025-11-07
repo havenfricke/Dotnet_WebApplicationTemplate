@@ -1,0 +1,95 @@
+﻿
+#Calculator {
+    width: 400px;
+    max-width: 100%;
+    border: 1px solid black;
+    margin: 2em auto;
+    background-color: var(--text-color-light);
+    border-radius: 20px;
+}
+#Calculator h2 {
+    align-content: center;
+    text-align: center;
+    word-wrap: break-word;
+}
+#Calculator label {
+    display: block;
+    width: 50%;
+    text-align: right;
+    font-size: Calc(var(--font-size) * 1.5);
+}
+/** 
+    Hi Marc,
+
+    If you're reading this great. Bootstrap 5 uses flex for their class row/column system.
+    
+    Rules of Flex as I know it:
+    
+    1) Flex applies to child elements
+    2) Container -> Row -> Column
+    3) Columns are determined by their row height, width, and where they are justified on the x-axis
+    4) Rows or columns may be aligned vertically with align-items on the y-axis
+
+    Below is the flex code I mentioned for this assignment in class.
+
+    If you want to experiment with this, please refer to the other options listed below.
+
+*/
+.CalculatorRow {
+    display: flex;
+    flex-wrap: wrap; /* prevents spilling, break to new line. same as text but w/ elements */
+    justify-content: left; /* HORIZONTAL (x) other options: right, center, space-between */
+    align-items: center; /* VERTICAL (y) other options: start, end */
+    padding: 0.5em 0;
+}
+.CalculatorRow label {
+    width: 50%;
+    display: block;
+    text-align: right;
+}
+.CalculatorRow
+.CalculatorRow input, .CalculatorRow #Operator {
+    width: 40%;
+    max-width: 100%;
+}
+#Operator table{
+    width: 100%;
+}
+#Operator label {
+    width: 80%;
+}
+#Operator label, #Operator input {
+    display: inline-block;
+    word-break: break-all;
+    vertical-align: middle;
+}
+#ContentPlaceHolder1_CalculatorValSum {
+    width: 400px;
+    margin: 10px auto;
+}
+#CalculatorOutputRow {
+    display: flex;
+    justify-content: center; /* horizontally center the row’s contents */
+    align-items: center; /* vertically center label and input */
+    margin: 0.5em 0;
+}
+#CalculatorOutputRow label {
+    text-align: right;
+    width: auto;
+}
+
+#CalculatorOutputRow input {
+    width: 50%;
+    text-align: center;
+}
+#MessageWrapper{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+#Buttons {
+    justify-self: center;
+}
+.CalcButton{
+    padding: 0.5em 0.3em;
+}

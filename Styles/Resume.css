@@ -1,0 +1,31 @@
+﻿:root {
+    --primary-color: #000B26;
+    --secondary-color: #000718;
+    --accent-color-dark: #2E4272;
+    --accent-color-bright: #DBDBDB;
+    --accent-color-light: #a7a7a7;
+    --text-color-light: #EDEDED;
+    --text-color-dark: #000000;
+    --font-family: "Tauri", sans-serif;
+    --font-size: 10px;
+    --font-weight: 400;
+    --border-radius: 1em;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*--------PAGE STYLES--------*/
+/*Use them throughout your resume page.*/
+#ContactInfo ul li {
+font-size: calc(var(--font-size) * 1.4);
+font-weight: var(--font-weight);
+/*Float this div to the right and right-justify its contents*/
+float: right;
+clear: both;
+justify-content: right;
+padding: 0.2rem 0;
+}
+/*
+When you are done, all styling information 
+for your website should be contained in one 
+of your three CSS files (reset, main, or resume).
+Any style information found in HTML tags will cause deductions.
+*/

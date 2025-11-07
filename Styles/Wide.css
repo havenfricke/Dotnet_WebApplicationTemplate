@@ -1,0 +1,9 @@
+﻿#Wrapper #Links{
+    display: none;
+}
+#Wrapper #PageContent {
+    display: block;
+    width: 880px;
+    float: none;
+    margin: auto;
+}
