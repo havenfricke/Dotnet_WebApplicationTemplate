@@ -7,11 +7,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    /*This color is slightly brighter than the gray in the demo image for high text contrast*/
     background-color: var(--text-color-light);
     border: 1px solid #000;
     border-radius: 2em;
     padding: 2em;
-    
 }
 #OrderForm h2 {
     width: 100%;
@@ -26,18 +26,13 @@
     font-weight: 700;
     font-style: italic;
     font-size: 18px;
+    color: var(--accent-color-dark);
     text-align: center;
     border-bottom: 1px solid #000;
     width: 100%;
     display: block;
     padding-bottom: 0.25em;
 }
-
-#OrderForm .OrderFormColumn:first-child > label {
-    color: red;
-}
-
-
 .CancelOrderButton{
     width: 120px;
     margin: auto;
@@ -46,4 +41,8 @@
     border-radius: 10px;
     box-shadow: #333 3px 3px 3px;
     color: blue;
+}
+#BottomLine {
+    border-bottom: dotted;
+    color: green;
 }

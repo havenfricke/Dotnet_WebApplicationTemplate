@@ -50,7 +50,7 @@
                                 </asp:CheckBoxList>
                             </div>
                         </div> 
-                    <asp:Button ID="CancelOrderButton" runat="server" CssClass="CancelOrderButton" Text="Cancel Order" CausesValidation="false" OnClick="CancelOrderButton_Click" />
+                    <asp:Button ID="CancelOrderButton" runat="server" CssClass="CancelOrderButton" CausesValidation="false" Text="Cancel Order" OnClick="CancelOrderButton_Click" />
                 </div>
            </form>
       </div>
