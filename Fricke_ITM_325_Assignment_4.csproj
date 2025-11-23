@@ -76,10 +76,17 @@
     <Content Include="ContentPages\OrderForm.aspx" />
     <Content Include="ContentPages\Resume.aspx" />
     <Content Include="Images\abstract_blu.jpg" />
+    <Content Include="Images\City_left.png" />
+    <Content Include="Images\City_right.png" />
     <Content Include="Images\College Resume &amp; Cover Letter.png" />
     <Content Include="index.html" />
     <Content Include="Styles\Calculator.css" />
-    <Content Include="Styles\Main.css" />
+    <Content Include="Styles\Main_LimeScooter.css" />
+    <Content Include="Styles\Main_Default.css" />
+    <Content Include="Styles\Main_Barbie.css" />
+    <Content Include="Styles\Main_Takis.css" />
+    <Content Include="Styles\Main_USA.css" />
+    <Content Include="Styles\Main_WhiteMonster.css" />
     <Content Include="Styles\OrderMenu.css" />
     <Content Include="Styles\Reset.css" />
     <Content Include="Styles\Resume.css" />
@@ -150,6 +157,9 @@
     <Compile Include="MasterPages\Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="Code\ThemedApp.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -162,7 +172,14 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Themes\Barbie\" />
+    <Folder Include="App_Themes\Default\" />
+    <Folder Include="App_Themes\LimeScooter\" />
+    <Folder Include="App_Themes\Takis\" />
+    <Folder Include="App_Themes\USA\" />
+    <Folder Include="App_Themes\WhiteMonster\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

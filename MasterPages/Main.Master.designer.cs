@@ -15,6 +15,15 @@ namespace Fricke_ITM_325_Assignment_4.MasterPages
     {
 
         /// <summary>
+        /// ThemeCss control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlLink ThemeCss;
+
+        /// <summary>
         /// head control.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,60 @@ namespace Fricke_ITM_325_Assignment_4.MasterPages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+
+        /// <summary>
+        /// DropdownLinkButton_Default control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DropdownLinkButton_Default;
+
+        /// <summary>
+        /// DropdownLinkButton_Barbie control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DropdownLinkButton_Barbie;
+
+        /// <summary>
+        /// DropdownLinkButton_WhiteMonster control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DropdownLinkButton_WhiteMonster;
+
+        /// <summary>
+        /// DropdownLinkButton_LimeScooter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DropdownLinkButton_LimeScooter;
+
+        /// <summary>
+        /// DropdownLinkButton_Takis control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DropdownLinkButton_Takis;
+
+        /// <summary>
+        /// DropdownLinkButton_USA control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DropdownLinkButton_USA;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

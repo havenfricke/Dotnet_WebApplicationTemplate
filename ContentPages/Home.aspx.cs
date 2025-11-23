@@ -11,7 +11,7 @@ namespace Fricke_ITM_325_Assignment_4.ContentPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

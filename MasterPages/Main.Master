@@ -9,57 +9,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Tauri&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Styles/Reset.css?v=1.0.0"/>
-    <link rel="stylesheet" href="/Styles/Main.css?v=1.0.0" /> 
+    <!--<link rel="stylesheet" href="/Styles/Main_Default.css?v=1.0.0" />-->
+    <link id="ThemeCss" runat="server" rel="stylesheet" href=""/>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 
 <body>
-    <div id="WebPage">
+    <form runat="server">
+        <div id="WebPage">
 
-        <header id="Banner">
+            <header id="Banner">
 
-            <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
-            <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
-           
-            <h1>Haven Fricke</h1>
+                
+                <img src="/Images/City_left.png" alt="city" />
+                <img src="/Images/City_right.png" alt="city" />
+                
 
-            <nav>
-                <ul>
+                <h1>Haven Fricke</h1>
+
+                <nav>
+                    <ul>
                     <li><a href="/ContentPages/Home.aspx">Home</a></li>
                     <li><a href="/ContentPages/Resume.aspx">R&eacute;sum&eacute;</a></li>
                     <li><a href="/ContentPages/Calculator.aspx">Calculator</a></li>
                     <li><a href="/ContentPages/OrderForm.aspx">Order Menu</a></li>
-                    <li><a href="#">Theme</a></li>
-                </ul>
-            </nav>
+                    <li id="DropdownContainer">
+                    <a href="#">Theme</a>
+                        <div id="DropdownBox">                            
+                            <asp:LinkButton ID="DropdownLinkButton_Default" runat="server"
+                                OnClick="ThemeLink_Click">Default</asp:LinkButton>
 
-        </header>
+                            <asp:LinkButton ID="DropdownLinkButton_Barbie" runat="server"
+                                OnClick="ThemeLink_Click">Barbie</asp:LinkButton>
 
-        <div id="Wrapper">
-            <aside id="Links">
-                <h2>Side Links</h2>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                </ul>
-            </aside>
-            <section id="PageContent">
+                            <asp:LinkButton ID="DropdownLinkButton_WhiteMonster" runat="server"
+                                OnClick="ThemeLink_Click">White Monster</asp:LinkButton>
+
+                            <asp:LinkButton ID="DropdownLinkButton_LimeScooter" runat="server"
+                                OnClick="ThemeLink_Click">Lime Scooter</asp:LinkButton>
+
+                            <asp:LinkButton ID="DropdownLinkButton_Takis" runat="server"
+                                OnClick="ThemeLink_Click">Taki's</asp:LinkButton> 
+
+                            <asp:LinkButton ID="DropdownLinkButton_USA" runat="server"
+                                OnClick="ThemeLink_Click">USA</asp:LinkButton> 
+                        </div>
+                    </li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <div id="Wrapper">
+                <aside id="Links">
+                    <h2>Side Links</h2>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                    </ul>
+                </aside>
+                <section id="PageContent">
                
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
                 
-            </section>
-        </div>
+                </section>
+            </div>
 
-        <footer id="Footer">
-            <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
-            <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
-            <p>&copy; 2025 Haven Fricke. All rights reserved.</p>
-        </footer>
-    </div>
+            <footer id="Footer">
+                <!--
+                <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
+                <img src="/Images/abstract_blu.jpg" alt="abstract blue" />
+                 -->
+                <p>&copy; 2025 Haven Fricke. All rights reserved.</p>
+                
+            </footer>
+        </div>
+    </form>
 </body>
 </html>

@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="OrderMenu">
-            <form id="form1" runat="server">
+            
                 <div id="OrderForm">
                     <h2>Pizza Order Form</h2>
                         <div id="OrderFormColumns">
@@ -52,6 +52,6 @@
                         </div> 
                     <asp:Button ID="CancelOrderButton" runat="server" CssClass="CancelOrderButton" CausesValidation="false" Text="Cancel Order" OnClick="CancelOrderButton_Click" />
                 </div>
-           </form>
+           
       </div>
 </asp:Content>

@@ -1,0 +1,350 @@
+﻿/* ------ DEFAULT VARIABLES ------ */
+:root {
+    --primary-color: #4B0082; /* fuego purple */
+    --secondary-color: #300052; /* deeper purple */
+    --accent-color-dark: #1D002C; /* near-black purple */
+    --accent-color-bright: #E8FF22; /* takis lime */
+    --accent-color-light: #BFFF5A; /* bright lime highlight */
+    --text-color-light: #F3EFFF; /* pale lavender white */
+    --text-color-dark: #120019; /* rich deep plum */
+    --font-family-heading: "Tauri", sans-serif;
+    --font-family-body: "Open Sans", sans-serif;
+    --font-size: 10px;
+    --font-weight: 400;
+    --border-radius: 1em;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+max-width: 100%;
+box-sizing: border-box;
+}
+
+/*
+3. Color Scheme (From canvas assignment)
+a) #000B26
+b) analogous
+c) 270 degrees
+d) #000718, #2E4272, #DBDBDB, #C7C7C7
+e) see below --->
+*/
+
+
+/* ------ GLOBAL COLORS ------ */
+.color-primary {
+color: var(--primary-color);
+}
+
+.color-secondary {
+color: var(--secondary-color);
+}
+
+.color-accent-dark {
+color: var(--accent-color-dark);
+}
+
+.color-accent-bright {
+color: var(--accent-color-bright);
+}
+
+.color-accent-light {
+color: var(--accent-color-light);
+}
+
+/* ------ GLOBAL STYLES ------ */
+html {
+font-size: var(--font-size);
+font-family: var(--font-family-body);
+background-color: var(--accent-color-light);
+color: var(--text-color-dark);
+overflow-x: hidden;
+height: 100%;
+padding: 0;
+margin: 0;
+}
+
+body {
+line-height: calc(var(--font-size) * 1.4);
+font-weight: var(--font-weight);
+}
+
+h1, h2, h3, h4 {
+font-family: var(--font-family-heading);
+font-weight: var(--font-weight);
+text-align: center;
+line-height: 1.2;
+color: var(--accent-color-light);
+}
+
+h1 {
+font-size: calc(var(--font-size) * 3.2);
+line-height: calc(var(--font-size) * 1.1);
+line-height: 1.2;
+clear: both;
+}
+
+h2 {
+font-size: calc(var(--font-size) * 2.2);
+}
+
+h3 {
+font-size: calc(var(--font-size) * 1.8);
+}
+
+h4 {
+font-size: calc(var(--font-size) * 1.2);
+}
+
+p {
+font-size: calc(var(--font-size) * 1.4);
+}
+
+a {
+font-size: calc(var(--font-size) * 1.6);
+}
+
+h2 a {
+font-size: calc(var(--font-size) * 2.2);
+text-decoration: none;
+}
+
+h3 a {
+font-size: calc(var(--font-size) * 1.8);
+}
+
+h4 a {
+font-size: calc(var(--font-size) * 1.2);
+}
+
+nav {
+background-color: var(--accent-color-dark);
+border-start-end-radius: var(--border-radius);
+border-start-start-radius: var(--border-radius);
+}
+
+nav a {
+text-decoration: none;
+padding: 0 1rem;
+color: var(--text-color-light);
+}
+
+/*---------PAGE STYLES---------*/
+#WebPage {
+width: 992px;
+margin: calc(var(--font-size) * 1.5) auto;
+}
+
+#Banner img {
+height: auto;
+border-radius: var(--border-radius);
+width: auto;
+margin-bottom: 2em;
+filter: hue-rotate(260deg) saturate(1.5);
+/* strong push into purples, spicy saturation */
+}
+
+
+#Banner img:first-of-type {
+float: left;
+width: 48%;
+margin-right: 1%;
+/* moved from em to % to accommodate height spilling with relative values */
+}
+
+#Banner img:last-of-type {
+float: right;
+width: 48%;
+margin-left: 1%;
+}
+
+/* ---------- BANNER NAV RESET ---------- */
+
+#Banner {
+background-color: var(--primary-color);
+box-shadow: var(--box-shadow);
+border-radius: var(--border-radius);
+padding: calc(var(--font-size) * 1) calc(var(--font-size) * 1) 0 calc(var(--font-size) * 1);
+margin-bottom: calc(var(--font-size) * 1.5);
+position: relative; /* no overflow here */
+}
+
+/* Nav bar */
+#Banner nav {
+display: block;
+width: 100%;
+margin-top: 0.5rem;
+background-color: var(--accent-color-dark);
+overflow: visible; /* important so dropdown can hang below */
+}
+
+#Banner nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+#Banner nav ul > li {
+    display: inline-block;
+    position: relative; /* anchor for dropdown */
+}
+
+#Banner nav > ul > li > a {
+display: inline-block;
+text-decoration: none;
+padding: 0 1rem;
+line-height: 3rem;
+color: var(--text-color-light);
+background: transparent;
+}
+
+#Banner nav > ul > li > a:hover,
+#Banner nav > ul > li > a:focus {
+    background: var(--accent-color-bright);
+    color: var(--primary-color);
+    transition: all 0.5s ease;
+}
+
+/* ---------- DROPDOWN ---------- */
+#DropdownBox {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+border: 1px solid #ccc;
+z-index: 0;
+}
+
+#DropdownContainer:hover #DropdownBox {
+display: flex;
+flex-direction: column;
+text-align: left;
+z-index: 0;
+}
+
+#DropdownBox a {
+display: block;
+max-width: 100%;
+text-decoration: none;
+background: var(--accent-color-dark);
+font-size: calc(var(--font-size) * 1.4);
+padding: 0.5em;
+}
+
+#DropdownBox a:hover,
+#DropdownBox a:focus {
+background: var(--accent-color-bright);
+color: var(--primary-color);
+font-weight: 700;
+transition: all 0.5s ease;
+}
+
+#Wrapper {
+background: #e6e6e6;
+margin-bottom: calc(var(--font-size) * 1.5);
+border-radius: var(--border-radius);
+box-shadow: var(--box-shadow);
+overflow: hidden;
+display: block;
+padding: 1rem;
+}
+
+#Wrapper > #Links,
+#Wrapper > #PageContent {
+display: inline-block;
+vertical-align: top;
+}
+
+#Wrapper > #Links {
+margin-right: 2rem;
+}
+
+#Links {
+width: 20%;
+background-color: var(--accent-color-dark);
+padding: calc(var(--font-size) * 1);
+border-radius: 2em;
+}
+
+#Links h2 {
+text-align: center;
+}
+
+#Links ul {
+margin-top: 1rem;
+}
+
+#Links a {
+display: block;
+text-decoration: none;
+margin: 0.4rem auto;
+width: max-content;
+color: var(--text-color-light);
+}
+
+#Links a:hover,
+#Links a:focus {
+text-decoration: underline;
+color: var(--primary-color);
+}
+
+#PageContent {
+width: 75%;
+padding: calc(var(--font-size) * 1);
+}
+
+#PageContent h2 {
+text-align: center;
+color: var(--accent-color-dark);
+}
+
+#PageContent h2 a:hover,
+#PageContent h2 a:focus {
+text-decoration: underline;
+color: var(--primary-color);
+}
+
+#PageContent article {
+margin: calc(var(--font-size) * 1.5) 0;
+}
+
+#Info {
+margin: 0.5em calc(var(--font-size) * 1.1) 0.5em calc(var(--font-size) * 1.1);
+}
+
+#Info h2 {
+color: var(--text-color-dark);
+}
+
+/*-----FOOTER PAGE STYLES------*/
+#Footer {
+background: var(--secondary-color);
+border-radius: var(--border-radius);
+box-shadow: var(--box-shadow);
+padding: calc(var(--font-size) * 1.5);
+position: relative;
+}
+
+#Footer img {
+margin: 0 0 1em 0;
+border-radius: var(--border-radius);
+}
+
+#Footer img:first-of-type {
+float: left;
+max-height: 80px;
+width: 48%;
+}
+
+#Footer img:last-of-type {
+float: right;
+max-height: 80px;
+width: 48%;
+}
+
+#Footer p {
+clear: both;
+text-align: center;
+color: var(--accent-color-dark);
+margin-top: 1rem;
+}
