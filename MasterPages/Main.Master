@@ -34,6 +34,7 @@
                     <li><a href="/ContentPages/Resume.aspx">R&eacute;sum&eacute;</a></li>
                     <li><a href="/ContentPages/Calculator.aspx">Calculator</a></li>
                     <li><a href="/ContentPages/OrderForm.aspx">Order Menu</a></li>
+                    <li><a href="/ContentPages/WordGame.aspx">Word Game</a></li>
                     <li id="DropdownContainer">
                     <a href="#">Theme</a>
                         <div id="DropdownBox">                            

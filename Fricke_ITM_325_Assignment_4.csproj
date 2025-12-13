@@ -75,6 +75,7 @@
     <Content Include="ContentPages\Home.aspx" />
     <Content Include="ContentPages\OrderForm.aspx" />
     <Content Include="ContentPages\Resume.aspx" />
+    <Content Include="ContentPages\WordGame.aspx" />
     <Content Include="Images\abstract_blu.jpg" />
     <Content Include="Images\City_left.png" />
     <Content Include="Images\City_right.png" />
@@ -91,9 +92,11 @@
     <Content Include="Styles\Reset.css" />
     <Content Include="Styles\Resume.css" />
     <Content Include="Styles\Wide.css" />
+    <Content Include="Styles\WordGame.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\WordCollection.cs" />
     <Compile Include="ContentPages\404.aspx.cs">
       <DependentUpon>404.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -149,6 +152,13 @@
     </Compile>
     <Compile Include="ContentPages\Resume.aspx.designer.cs">
       <DependentUpon>Resume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\WordGame.aspx.cs">
+      <DependentUpon>WordGame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\WordGame.aspx.designer.cs">
+      <DependentUpon>WordGame.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPages\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
