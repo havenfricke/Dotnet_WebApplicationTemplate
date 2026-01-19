@@ -1,4 +1,3 @@
-## Dotnet_WebApplicationTemplate
 
 A starter template for modern, scalable .NET web applications using ASP.NET Core.  
 This repository provides a solid base for building web APIs, Razor Pages, MVC apps, or hybrid solutions with best-practice structure and configuration.
